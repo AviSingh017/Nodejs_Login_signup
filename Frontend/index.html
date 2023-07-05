@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Apis</title>
+
+    <link rel="stylesheet" href="./styles/index.css">
+
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="formbox">
+
+            <div class="buttonbox">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+            <div class="icon">
+                <img src="./icons/fb.png" alt="Error">
+                <img src="./icons/gp.png" alt="Error">
+                <img src="./icons/tw.png" alt="Error">
+            </div>
+
+            <form id="login" class="input-grp">
+                <input type="email" id="email" class="input-space" placeholder="Enter Email" required>
+                <input type="password" id="pass" class="input-space" placeholder="Enter Password" required>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+
+            <form id="register" class="input-grp">
+                <input type="text" id="Name" class="input-space" placeholder="Username" required>
+                <input type="email" id="Email" class="input-space" placeholder="Email Id" required>
+                <input type="password" id="password" class="input-space" placeholder="Enter Password" required>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let x = document.getElementById("login");
+        let y = document.getElementById("register");
+        let z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
